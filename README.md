@@ -32,5 +32,6 @@ docker pull metabase/metabase
 docker run -d -p 3000:3000 --name metabase metabase/metabase
 
 #configurar no metabase o banco de dados com as mesma credenciais do postgres (main.py)
+# localhost:3000 no browser
 
 ```
