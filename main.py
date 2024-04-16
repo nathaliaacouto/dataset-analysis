@@ -57,8 +57,8 @@ def reset_workspace():
 
 
 if __name__ == '__main__':
-    reset_workspace = False
-    if reset_workspace:
+    is_reset_workspace = False
+    if is_reset_workspace:
         print('Resetando o ambiente de trabalho...')
         reset_workspace()
         print('Ambiente de trabalho resetado com sucesso!')
