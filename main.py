@@ -20,7 +20,7 @@ path_to_download = '/tmp/'
 
 
 def main():
-    # Job de download do dataset (2)
+    # Job de download do dataset
     print('Job de download do dataset')
     manage_dataset.download_dataset(dataset, path_to_download, csv_file_path)
     print('Job de download do dataset finalizado')
