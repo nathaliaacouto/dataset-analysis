@@ -13,13 +13,16 @@ cursor = conn.cursor()
 dataset = 'https://www.kaggle.com/datasets/l3llff/banana'
 
 # Definir o caminho do arquivo CSV
-csv_file_path = '/tmp/banana_quality.csv'
+csv_file_path = '/tmp/banana/banana_quality.csv'
+
+# Caminho para download do dataset
+path_to_download = '/tmp/'
 
 
 def main():
     # Job de download do dataset (2)
     print('Job de download do dataset')
-    manage_dataset.download_dataset(dataset, csv_file_path)
+    manage_dataset.download_dataset(dataset, path_to_download, csv_file_path)
     print('Job de download do dataset finalizado')
 
     # Job de criação da tabela

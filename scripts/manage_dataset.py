@@ -1,8 +1,8 @@
 import os
 import opendatasets as od
 
-def download_dataset(dataset_url, dataset_path):
-    if os.path.exists(dataset_path):
+def download_dataset(dataset_url, dataset_path, csv_file_path):
+    if os.path.exists(csv_file_path):
         print(f'O conjunto de dados já foi baixado em {dataset_path}')
         print('Pulando o download...')
     else:
