@@ -26,4 +26,11 @@ pip install -r requirements.txt
 #add kaggle.json inside of root folder.
 
 python3 main.py
+
+docker pull metabase/metabase
+
+docker run -d -p 3000:3000 --name metabase metabase/metabase
+
+#configurar no metabase o banco de dados com as mesma credenciais do postgres (main.py)
+
 ```
